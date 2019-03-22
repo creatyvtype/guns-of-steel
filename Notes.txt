@@ -1,0 +1,18 @@
+React-native-web notes
+
+yarn create react-app <appname> --typescript
+- sets up typescript and a base react app
+- added typescript imports to vscode
+* suggested react-native 0.55.4 since that was compatible with react-native-web 
+- react-native@0.55.4
+- react-native-web@0.10.0
+- react-art@16.8.2
+* i installed latest
+yarn add -D @types react-native (@0.55.4)
+
+remove unecessary boilerplate
+logo.svg
+index.css
+App.css
+App.test.tsx
+- remove reference to index.css from index.tsx
