@@ -1,5 +1,7 @@
 React-native-web notes
 
+https://www.youtube.com/watch?v=_CBYbEGvxYY
+
 yarn create react-app <appname> --typescript
 - sets up typescript and a base react app
 - added typescript imports to vscode
@@ -51,3 +53,50 @@ add app registry from react-native
     "description": "React Native StyleSheet"
   }
 
+add react native views to App.tsx
+run `yarn start` and see it fly!
+generates a LOT of classes
+
+________________________________________________________________
+
+SHIFT to trying to run hooks in react-native
+This react-native app will end up in the monorepo!
+
+I tried to follow along stupidly in this project instead of a separate project. Here's the notes....
+getting the mobile app up
+expo? does not work with hooks! so we use react-native CLI
+
+npm i -g react-native-cli
+referencing https://facebook.github.io/react-native/blog/2018/05/07/using-typescript-with-react-native
+react-native init GunsOfSteel --template typescript
+* error: --template flag not working...
+works when you do it NOT in a project (duh)
+Noteworthy, not used:
+npm install --save-dev @babel/preset-typescript @babel/preset-env @babel/plugin-proposal-class-properties @babel/plugin-proposal-object-rest-spread
+
+he bumps the versions in the generated project and adds ios starter script and updates to use functional component
+my script ran with latest already
+add ios script
+ios: react-native run-ios
+
+run yarn start and yarn ios separately, WORKS!
+
+wants it to be a monorepo - BRILLIANT! WHO IS THIS MAN!
+________________________________________________________________
+
+Setting up the monorepo
+- move things into packages/
+npm init -y creates the package.json
+update to private: true and workspaces: packages/*
+add the app version with hooks (the file we edited) to common/index.tsx
+add react, react-native as deps and add dev deps typescript, @types/react-native to common 
+add tsconfig.json to common, with adjustments
+make sure typescript is installed globally
+npm install typescript -g
+yarn build in common 
+
+point web App to the @wow/common App you are exporting
+
+had to drop jest version in the app because of react-scripts stupid thing.
+did not have to add his addition of SKIP_PREFLIGHT_CHECK=true to the start script in web. it just worked.
+can add rimraf dist (need the dev dep) to remake dist from scratch.
