@@ -16,3 +16,38 @@ index.css
 App.css
 App.test.tsx
 - remove reference to index.css from index.tsx
+
+__________________________________________________________
+
+add app registry from react-native
+* set up in vscode to remove dependencies not used!
+"editor.codeActionsOnSave": {
+    "source.organizeImports": true
+}
+* useful user snippets in typescriptreact.json
+  "Typescript React Function Component": {
+    "prefix": "rh",
+    "body": [
+      "import * as React from 'react'",
+      "",
+      "interface Props {",
+      "",
+      "}",
+      "",
+      "export const $1: React.FC<Props> = () => {",
+      "\t\treturn ($2);",
+      "}"
+    ],
+    "description": "Typescript React Function Component"
+  },
+  "React Native StyleSheet": {
+    "prefix": "rnss",
+    "body": [
+      "import {StyleSheet} from 'react-native'",
+      "const styles = StyleSheet.create({",
+      "",
+      "});"
+    ],
+    "description": "React Native StyleSheet"
+  }
+
