@@ -139,3 +139,11 @@ add currentSquat, shows error for him. turn off "strictPropertyInitialization" i
 add the rest of the stuffs
 
 ___________________________________________________________________
+Navigation
+
+React Navigation isn't set up great yet for web and native, so just gonna do something simple with store
+Basic set up with mobx
+Start basic styling of containers
+He struggles to get it to 100% height... will fix next video
+
+______________________________________________________________
