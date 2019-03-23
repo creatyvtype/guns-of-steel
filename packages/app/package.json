@@ -1,5 +1,8 @@
 {
   "name": "GunsOfSteel",
+  "workspaces": {
+    "nohoist": ["react-native", "react-native/**", "react", "react/**"]
+  },
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -8,7 +11,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@wow/common": "1.0.0",
+    "@wow/common": "^1.0.0",
     "react": "16.8.3",
     "react-native": "0.59.1"
   },

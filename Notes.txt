@@ -100,3 +100,20 @@ point web App to the @wow/common App you are exporting
 had to drop jest version in the app because of react-scripts stupid thing.
 did not have to add his addition of SKIP_PREFLIGHT_CHECK=true to the start script in web. it just worked.
 can add rimraf dist (need the dev dep) to remake dist from scratch.
+
+
+_________________________________________________________________________
+
+settng up app in monorepo
+add @wow/common dep
+to deal with starting the app, don't hoise react-native under just one package
+add to "workspaces" in root:
+"nohoist": ["react-native", "react-native/**"]
+may need to delete the generated build folder in app to get it to run
+symlinks are a problem:
+install a watchman type thing 
+npm install -g wml
+wml add ../common ./node_modules/@wow/common
+wml start
+had to add "react, react/**" as well to nohoist
+MAYBE this can be done with lerna?
