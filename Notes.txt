@@ -117,3 +117,17 @@ wml add ../common ./node_modules/@wow/common
 wml start
 had to add "react, react/**" as well to nohoist
 MAYBE this can be done with lerna?
+
+__________________________________________________________________________
+
+mobx for data management in @wow/common
+yarn add mobx-react-lite@1.0.1 mobx5.9.0
+I installed latest, which was 1.1.1, 5.9.0
+
+create CounterStore with mobx decorator
+turn on experimentalDecorators in tsconfig
+
+update to observe store in index
+add tsc --watch in common to keep that going
+
+watch it fly

@@ -1,25 +1,17 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * Generated with the TypeScript template
- * https://github.com/emin93/react-native-template-typescript
- *
- * @format
- */
-
-import * as React from 'react';
+import React, { useContext } from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
+import { observer } from 'mobx-react-lite';
+import { CounterStoreContext } from './stores/CounterStore';
 
-export const App = () => {
-    const [count, setCount] = React.useState(0);
+export const App = observer(() => {
+    const counterStore = useContext(CounterStoreContext);
 
     return (
         <View style={styles.container}>
             <Text style={styles.welcome}>Welcome to React Native!</Text>
             <Text style={styles.instructions}>To get started, edit App.tsx</Text>
-            <Text style={styles.instructions}>{count}</Text>
-            <Button title="increment" onPress={() => setCount(count + 1)} />
+            <Text style={styles.instructions}>{counterStore.count}</Text>
+            <Button title="increment" onPress={() => counterStore.count++} />
         </View>
     );
 };
@@ -41,4 +33,4 @@ const styles = StyleSheet.create({
         color: '#333333',
         marginBottom: 5,
     },
-});
+}));
