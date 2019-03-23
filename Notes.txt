@@ -147,3 +147,12 @@ Start basic styling of containers
 He struggles to get it to 100% height... will fix next video
 
 ______________________________________________________________
+Styling 
+
+Started seeing strict property issue. Adding the config
+Styling is hella easy.
+Use the ViewStyle type from react-native for the style objects from stylesheet.
+
+Had issue starting the app
+
+_____________________________________________________________

@@ -14,7 +14,7 @@ export const App = observer(() => {
             </View>
         </View>
     );
-}
+});
 
 const styles = StyleSheet.create({
     container: {
@@ -28,5 +28,5 @@ const styles = StyleSheet.create({
         width: "100%",
         maxWidth: 425,
         flex: 1
-    }
-}));
+    },
+});

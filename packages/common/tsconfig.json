@@ -13,7 +13,8 @@
         "resolveJsonModule": true,
         "declaration": true,
         "jsx": "react",
-        "experimentalDecorators": true
+        "experimentalDecorators": true,
+        "strictPropertyInitialization": false
     },
     "include": ["src"]
 }
