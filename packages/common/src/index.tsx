@@ -14,18 +14,18 @@ export const App = observer(() => {
             </View>
         </View>
     );
-};
+}
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        height: 100%;
+        height: "100%"
     },
     wrapper: {
         backgroundColor: '#F5FCFF',
-        width: 100%,
+        width: "100%",
         maxWidth: 425
     }
 }));
