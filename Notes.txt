@@ -131,3 +131,11 @@ update to observe store in index
 add tsc --watch in common to keep that going
 
 watch it fly
+
+_________________________________________________________________________
+WorkoutStore
+
+add currentSquat, shows error for him. turn off "strictPropertyInitialization" in tsconfig
+add the rest of the stuffs
+
+___________________________________________________________________
