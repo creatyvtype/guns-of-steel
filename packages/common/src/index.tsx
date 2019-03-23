@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
     wrapper: {
         backgroundColor: '#F5FCFF',
         width: "100%",
-        maxWidth: 425
+        maxWidth: 425,
+        flex: 1
     }
 }));
