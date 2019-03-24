@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
         height: "100%"
     },
     wrapper: {
-        backgroundColor: '#F5FCFF',
+        backgroundColor: '#fafafa',
         width: "100%",
         maxWidth: 425,
         flex: 1

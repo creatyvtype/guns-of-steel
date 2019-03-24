@@ -156,3 +156,8 @@ Use the ViewStyle type from react-native for the style objects from stylesheet.
 Had issue starting the app
 
 _____________________________________________________________
+Some UI for workouts
+
+added to the cards, able to track the sets and have it persist.
+
+____________________________________________________________
