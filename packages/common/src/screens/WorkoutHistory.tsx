@@ -3,7 +3,7 @@ import { View, Text, Button } from 'react-native';
 import { observer } from 'mobx-react-lite';
 import { RootStoreContext } from '../stores/RootStore';
 
-export interface Props {}
+interface Props {}
 
 export const WorkoutHistory: React.FC<Props> = observer(() => {
     const rootStore = useContext(RootStoreContext);

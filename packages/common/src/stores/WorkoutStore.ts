@@ -2,9 +2,9 @@ import { createContext } from 'react';
 import { observable } from 'mobx';
 import { RootStore } from './RootStore';
 
-export type WorkoutDay = 'a' | 'b';
+type WorkoutDay = 'a' | 'b';
 
-export interface WorkoutHistory {
+interface WorkoutHistory {
     [key: string]: Array<{
         exercise: string;
         value: number;

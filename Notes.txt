@@ -161,3 +161,22 @@ Some UI for workouts
 added to the cards, able to track the sets and have it persist.
 
 ____________________________________________________________
+Adding a Timer
+
+Deactivate 'declaration' in tsconfig to stop the prop/interface thing where it wants us to export
+@action sets up a method
+@computed takes get which makes you not have to call the function. kinda nice.
+needed lambda for clear method... weird. So not
+`onPress={myMethod}`
+but
+`onPress={() => myMethod()}`
+Maybe something to do with observable?
+
+Claims && isn't great for rendering
+`{myBool && <Render></Render>}, uses ternary instead.
+Something to do with react-native? Worked fine for me.
+
+Set up timer without animation. Looks decent.
+
+Not sure mobx is the best solution here... but maybe?
+________________________________________________________________
